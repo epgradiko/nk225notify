@@ -1,0 +1,9 @@
+/usr/bin/podman run \
+        --rm \
+        --replace \
+        --hostname nk225notify \
+        --network podman \
+        --env S6_CMD_WAIT_FOR_SERVICES_MAXTIME=0 \
+        --volume ./crontabs:/etc/crontabs \
+        --volume ./settings:/usr/local/bin/nk225notify/settings \
+        --name nk225notify nk225notify
