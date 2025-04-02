@@ -1,5 +1,7 @@
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-02 09 * * * /usr/bin/python /usr/local/bin/nk225notify/nk225notify
+01 09 * * * /usr/bin/python /usr/local/bin/nk225notify/nk225notify
+31 11 * * * /usr/bin/python /usr/local/bin/nk225notify/nk225notify
+31 12 * * * /usr/bin/python /usr/local/bin/nk225notify/nk225notify
 31 14 * * * /usr/bin/python /usr/local/bin/nk225notify/nk225notify
-03 15 * * * /usr/bin/python /usr/local/bin/nk225notify/nk225notify
+01 15 * * * /usr/bin/python /usr/local/bin/nk225notify/nk225notify

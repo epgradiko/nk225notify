@@ -16,7 +16,8 @@ RUN addgroup -g 1000 -S nk225 && \
                      python3 py3-beautifulsoup4 py3-requests curl && \
     crontab -r && \
     chown -R nk225:nk225 /usr/local/bin/nk225notify && \
-    sudo -u nk225 pip3 install jpholiday
+    sudo -u nk225 pip3 install jpholiday && \
+    sudo -u nk225 pip3 install line-bot-sdk
 VOLUME /usr/local/bin/nk225notify/settings
 VOLUME /etc/crontabs
 ENTRYPOINT ["/init"]
